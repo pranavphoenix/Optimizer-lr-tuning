@@ -44,7 +44,7 @@ We train the model using
 of available training data.
 
 ##### The results are given in results.pdf
-##### Code is given in Unet.ipyb
+##### Code is given in Unet.ipynb
 
 
 
