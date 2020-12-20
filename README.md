@@ -43,8 +43,8 @@ We train the model using
 - 100%
 of available training data.
 
-The results are given in results.pdf
-Code is given in Unet.ipyb
+##### The results are given in results.pdf
+##### Code is given in Unet.ipyb
 
 
 
