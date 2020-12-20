@@ -23,6 +23,25 @@ We use the following 7 different optimizers for our experiment.
 - Adam
 - Adamax
 - Nadam
+### Experiment 1
+We are going to train the data using each of the above optimizers with 4 different learning rates
+- 0.1 
+- 0.01
+- 0.001
+- 0.0001
+to find out how fast the loss converges to a minimum. 
+We find the minimum number of epochs needed for the validation error to converge to a minimum as measure of convergence.
+The training was run for 100 epochs to check the convergence for high learning rates and to 700 epochs for low learning rates.
+### Experiment 2
+After finding the best learning rate for each of the optimizers from the results of the first experiment, we vary the data available for training and see how that affects the rate of convergence for each of the optimizers.
+For this experiment, we are only training at the best learning rates we found for each optimizer. So, from the result we can know if availability of data affects the behaviour of the optimizer.
+We train the model using
+- 20% 
+- 40% 
+- 60% 
+- 80%
+- 100%
+of available training data.
 
 
 
