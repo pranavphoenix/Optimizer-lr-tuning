@@ -5,9 +5,30 @@ When we train our model on datasets, we need the error to converge to a minimum 
 It has been observed that having a high learning rate initially is better for faster searching of the loss landscape. Subsequently, it has also been observed that reducing the learning rate as the number of epochs increases helps the optimizer to not make sudden jumps out of a minimum it is approaching, thus helping it to reach a minimum. So, we use different learning rate schedulers to see which one will work best with the optimizer to reach a minimum faster, if at all it does aid the optimizers.
 
 ### Experiment Design Strategy
-
 The Dataset we have is that of Cardiac MRI Segmentation. The dataset contains around 4k images for training. We are dividing the dataset into 80% as training and 20% as validation sets. 
 We are creating a U-Net model to train the dataset as given in the paper. (Chuckyee, 2017)
+#### Unet Architecture (Yee, 2017)
+![image](https://user-images.githubusercontent.com/15833382/102724910-f30ee000-4338-11eb-8705-5c9af9256153.png)
+
+We are not use data augmentation methods given in the paper for training.
+We used Weighted categorical Cross entropy as our loss function which we call as pixel loss.
+Mean Intersection-Over-Union was used along with Accuracy as a metric for evaluation as our task is semantic image segmentation
+Dice loss was also computed as an evaluation metric.
+#### Batch size = 32
+We use the following 7 different optimizers for our experiment. 
+- SGD 
+- RMSprop 
+- Adagrad 
+- Adadelta
+- Adam
+- Adamax
+- Nadam
+
+
+
+
+
+
 
 
 
